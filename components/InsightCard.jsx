@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 
 import { fadeIn } from '../utils/motion';
+import { PREFIX } from '../constants';
 
 const InsightCard = ({ imgUrl, title, subtitle, index }) => (
   <motion.div
@@ -10,7 +11,7 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
     className="flex md:flex-row flex-col gap-4"
   >
     <img
-      src={imgUrl}
+      src={PREFIX + imgUrl}
       alt="planet-01"
       className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover"
     />
