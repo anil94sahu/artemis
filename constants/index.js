@@ -86,3 +86,5 @@ export const socials = [
     url: '/facebook.svg',
   },
 ];
+
+export const PREFIX = process.env.NEXT_BASE_PATH || '';

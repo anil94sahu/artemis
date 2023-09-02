@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { startingFeatures } from '../constants';
+import { PREFIX, startingFeatures } from '../constants';
 import { StartSteps, TitleText, TypingText } from '../components';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 
@@ -21,7 +21,7 @@ const GetStarted = () => (
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
-          src="/get-started.png"
+          src={PREFIX + "/get-started.png"}
           alt="get-started"
           className="w-[90%] h-[90%] object-contain"
         />
